@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>aws_robomaker_small_house_world</name>
+  <version>1.0.0</version>
+  <description>
+    AWS RoboMaker package for a house world with multiple rooms and furniture for Gazebo simulations. Working with ROS 2 and Gazebo 7 and 8.
+  </description>
+  <license>GPL-3.0</license>
+  <author email="bruk@signaltech.xyz">Bruk Gebregziabher</author>
+  <maintainer email="bruk@signaltech.xyz">Bruk Gebregziabher</maintainer>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <exec_depend>ros_gz_sim</exec_depend>
+  <exec_depend>gazebo</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
