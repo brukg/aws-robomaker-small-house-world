@@ -10,7 +10,9 @@
   <maintainer email="bruk@signaltech.xyz">Bruk Gebregziabher</maintainer>
   <buildtool_depend>ament_cmake</buildtool_depend>
   <exec_depend>ros_gz_sim</exec_depend>
-  <exec_depend>gazebo</exec_depend>
+  <exec_depend>gz_ros2_control</exec_depend>
+  <exec_depend>ros_gz_bridge</exec_depend>
+  <exec_depend>imu_sensor_broadcaster</exec_depend>
 
   <export>
     <build_type>ament_cmake</build_type>
