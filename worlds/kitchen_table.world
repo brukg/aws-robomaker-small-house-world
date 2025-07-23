@@ -14,7 +14,7 @@
     <gravity>0 0 -9.8</gravity>
     <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
     <atmosphere type='adiabatic'/>
-    <physics name='default_physics' default='0' type='ode'>
+    <physics name='default_physics' default='0' type='dart'>
       <max_step_size>0.001</max_step_size>
       <real_time_factor>1</real_time_factor>
       <real_time_update_rate>1000</real_time_update_rate>
@@ -35,13 +35,13 @@
     </spherical_coordinates>
 
     <!-- Essential World Infrastructure -->
-    <model name='HouseWallB_01_001'>
+    <!-- <model name='HouseWallB_01_001'>
         <static>true</static>    
         <include>
             <uri>model://aws_robomaker_residential_HouseWallB_01</uri>
         </include>
         <pose frame=''>0 0 0 0 -0 0</pose>
-	</model>
+	</model> -->
     
     <model name='FloorB_01_001'>
         <static>true</static>    
@@ -57,8 +57,7 @@
         <include>
             <uri>model://aws_robomaker_residential_KitchenTable_01</uri>
         </include>
-        <pose frame=''>6.55269 0.951173 -0.000006 0 -0 -1.564130</pose>
-        <scale>1.0 1.0 1.250</scale>
+        <pose frame=''>6.55269 0.951173 0.100006 0 -0 -1.564130</pose>
 	</model>
 
     <!-- Dining Table -->
@@ -72,7 +71,7 @@
 
     <!-- Colored Cubes on Dining Table (KitchenTable) -->
     <model name='red_cube'>
-        <pose frame=''>6.45269 0.851173 0.85 0 0 0</pose>
+        <pose frame=''>6.35269 0.7 1.5 0 0 0</pose>
         <link name='link'>
             <inertial>
                 <mass>0.001</mass>
@@ -104,7 +103,7 @@
     </model>
 
     <model name='green_cube'>
-        <pose frame=''>6.55269 0.951173 0.85 0 0 0</pose>
+        <pose frame=''>6.65269 0.7 1.5 0 0 0</pose>
         <link name='link'>
             <inertial>
                 <mass>0.001</mass>
@@ -135,8 +134,8 @@
         </link>
     </model>
 
-    <model name='blue_cube'>
-        <pose frame=''>6.65269 1.051173 0.85 0 0 0</pose>
+    <model name='yellow_cube'>
+        <pose frame=''>6.65269 1.051173 1.5 0 0 0</pose>
         <link name='link'>
             <inertial>
                 <mass>0.001</mass>
@@ -160,15 +159,15 @@
                     </box>
                 </geometry>
                 <material>
-                    <ambient>0 0 1 1</ambient>
-                    <diffuse>0 0 1 1</diffuse>
+                    <ambient>1 1 0 1</ambient>
+                    <diffuse>1 1 0 1</diffuse>
                 </material>
             </visual>
         </link>
     </model>
 
     <!-- Kitchen Appliances and Fixtures -->
-	<model name='CookingBench_01_001'>
+	<!-- <model name='CookingBench_01_001'>
         <include>
             <uri>model://aws_robomaker_residential_CookingBench_01</uri>
         </include>
@@ -182,23 +181,23 @@
             <uri>model://aws_robomaker_residential_KitchenCabinet_01</uri>
         </include>
         <pose frame=''>8.002009 -3.836509 0.012068 0 -0 -3.140001</pose>
-	</model>
+	</model> -->
 
-	<model name='Refrigerator_01_001'>
+	<!-- <model name='Refrigerator_01_001'>
         <static>true</static>    
         <include>
             <uri>model://aws_robomaker_residential_Refrigerator_01</uri>
         </include>
         <pose frame=''>8.702731 -1.032031 0 0 -0 -1.563499</pose>
-	</model>
+	</model> -->
 
-	<model name='Rangehood_01_001'>
+	<!-- <model name='Rangehood_01_001'>
         <static>true</static>    
         <include>
             <uri>model://aws_robomaker_residential_Rangehood_01</uri>
         </include>
         <pose frame=''>9.019794 -3.369940 1.507605 0 -0 0</pose>
-	</model>
+	</model> -->
 
 	<model name='KitchenUtensils_01_001'>
         <static>true</static>    
